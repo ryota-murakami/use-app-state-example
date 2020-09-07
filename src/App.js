@@ -1,6 +1,6 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
   return (
@@ -11,13 +11,13 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="Counter Example"
+          href="./cou"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>{" "}
+        </a>{' '}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -25,7 +25,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>{" "}
+        </a>{' '}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -36,7 +36,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
