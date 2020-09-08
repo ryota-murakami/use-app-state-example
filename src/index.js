@@ -1,21 +1,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from '@reach/router'
-import './index.css'
+import Provider from '@laststance/use-app-state'
 import App from './App'
 import Counter from './Counter'
 import MultiRoot from './MultiRoot'
 import Action from './Action'
 import * as serviceWorker from './serviceWorker'
 
+// const initialState =
+
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App path="/" />
-      <Counter path="/counter"/>
-      <MultiRoot path="/multiroot"/>
-      <Action path="/action"/>
-    </Router>
+    <Provider initialState={{ count: 0 }}>
+      <Router>
+        <App path="/"/>
+        <Counter path="/counter"/>
+        <MultiRoot path="/multiroot"/>
+        <Action path="/action"/>
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 )
