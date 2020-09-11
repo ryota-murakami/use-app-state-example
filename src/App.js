@@ -9,10 +9,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo"/>
         <Link to="/counter" className="App-link">
-          Counter Example
+          Counter
         </Link>{' '}
         <Link to="/multiroot" className="App-link">
-          Multi Root Example
+          Multi Root
         </Link>{' '}
         <Link to="/action" className="App-link">
           Action Abstraction
