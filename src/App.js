@@ -14,9 +14,6 @@ function App() {
         <Link to="/multiroot" className="App-link">
           Multi Root
         </Link>{' '}
-        <Link to="/action" className="App-link">
-          Action Abstraction
-        </Link>
       </header>
     </div>
   )
