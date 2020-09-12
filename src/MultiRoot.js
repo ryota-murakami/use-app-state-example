@@ -1,7 +1,16 @@
 import React from 'react'
+import DrinkList from './DrinkList'
+import FruitsList from './FluitsList'
 
-const MultiRoot = () => {
-  return <div><h1>Multiple</h1></div>
+import './MultiRoot.css'
+
+function MultiRoot() {
+  return (
+    <div className="MultiRoot">
+      <DrinkList />
+      <FruitsList />
+    </div>
+  );
 }
 
 export default MultiRoot
