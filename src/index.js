@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from '@reach/router'
-import Provider from '@laststance/use-app-state'
+import appStateRoot from '@laststance/use-app-state'
 import App from './App'
 import Counter from './Counter'
 import MultiRoot from './MultiRoot'
@@ -12,14 +12,14 @@ import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider initialState={{ count: 0 }}>
+    <appStateRoot initialState={{ count: 0 }}>
       <Router>
         <App path="/"/>
         <Counter path="/counter"/>
         <MultiRoot path="/multiroot"/>
         <Action path="/action"/>
       </Router>
-    </Provider>
+    </appStateRoot>
   </React.StrictMode>,
   document.getElementById('root')
 )
