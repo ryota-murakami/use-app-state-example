@@ -5,8 +5,8 @@ const fruitsState = {
   fruitsList: [
     { id: 0, name: 'orange' },
     { id: 1, name: 'apple' },
-    { id: 2, name: 'berry' }
-  ]
+    { id: 2, name: 'berry' },
+  ],
 }
 
 const FruitsList = () => {
@@ -23,7 +23,7 @@ const FruitsList = () => {
     <div>
       <h3>FruitsList</h3>
       <ul>
-        {appState.fruitsList.map(f => (
+        {appState.fruitsList.map((f) => (
           <li key={f.id}>{f.name}</li>
         ))}
       </ul>
@@ -36,7 +36,7 @@ const FruitsList = () => {
 
 const FluitsListApp = () => (
   <FruitsProvider initialState={fruitsState}>
-    <FruitsList/>
+    <FruitsList />
   </FruitsProvider>
 )
 

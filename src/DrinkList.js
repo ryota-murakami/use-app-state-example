@@ -5,8 +5,8 @@ const initialState = {
   drinkList: [
     { id: 0, name: 'water' },
     { id: 1, name: 'cola' },
-    { id: 2, name: 'tea' }
-  ]
+    { id: 2, name: 'tea' },
+  ],
 }
 
 const DrinkList = () => {
@@ -24,7 +24,7 @@ const DrinkList = () => {
     <div>
       <h3>DrinkList</h3>
       <ul>
-        {drinkList.map(d => (
+        {drinkList.map((d) => (
           <li key={d.id}>{d.name}</li>
         ))}
       </ul>
@@ -37,7 +37,7 @@ const DrinkList = () => {
 
 const DrinkListApp = () => (
   <DrinkProvider initialState={initialState}>
-    <DrinkList/>
+    <DrinkList />
   </DrinkProvider>
 )
 

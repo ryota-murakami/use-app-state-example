@@ -10,7 +10,7 @@ function MultiRoot() {
       <DrinkList />
       <FruitsList />
     </div>
-  );
+  )
 }
 
 export default MultiRoot

@@ -14,10 +14,10 @@ ReactDOM.render(
   <React.StrictMode>
     <appStateRoot initialState={{ count: 0 }}>
       <Router>
-        <App path="/"/>
-        <Counter path="/counter"/>
-        <MultiRoot path="/multiroot"/>
-        <Action path="/action"/>
+        <App path="/" />
+        <Counter path="/counter" />
+        <MultiRoot path="/multiroot" />
+        <Action path="/action" />
       </Router>
     </appStateRoot>
   </React.StrictMode>,
